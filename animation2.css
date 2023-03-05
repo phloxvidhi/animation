@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    padding: 1;
+    box-sizing: border-box;
+    background: radial-gradient(circle at top left, #91baec, #9e91e8);
+}
+
+.container{
+width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hey{
+    width: 10vw;
+    height: 6vh;
+    display: inline-block;
+    position: relative;
+    padding: 5px 10px;
+    background:#260839 ;
+    border-radius: 7px;
+    color:white ;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.3);
+    border: 0px;
+    cursor: pointer;
+    transition: box-shadow 0.25s ease;
+}
+
+.hey:active{
+box-shadow: 0 5px 30px rgba(0,0,0,0.5);
+background: #722e9d;
+
+
+}
+
+.circle{
+width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: radial-gradient(circle at top left, #FF6347, #FFA07A);
+        border: 0px;
+        box-shadow: inset 0 0 10px rgba(255,255,255,0.3), inset 0 0 15px rgba(255,255,255,0.2), inset 0 0 20px rgba(255,255,255,0.1), 0 0 20px #666;
+
+      
+            position: absolute;
+            animation: float 15s  infinite;
+            z-index: 4;
+            
+    
+            
+
+
+}
+
+.circle:hover{
+    background: black;
+    color: aliceblue;
+    animation-play-state: paused;
+    outline-color: rgb(0, 0, 0);
+
+    
+    
+}
+
+
+
+@keyframes float {
+    0%   {
+        background:radial-gradient(circle at top left, #FF6347, #FFA07A);
+scale: 5;
+top: 30px; 
+       left:20px; 
+   }
+
+   15% {
+    scale: 3;
+    background:radial-gradient(circle at top left, #e98aa2, #f358a3);
+    top: 500px; 
+       left: 800px; 
+}
+
+
+30% {
+    scale: 1;
+    background:radial-gradient(circle at top left, #f358a3, #341196);
+top: 30px; 
+       left:50px; 
+} 
+
+
+45% {
+    scale: 4;
+    background:radial-gradient(circle at top left, #DOE6A5, #86E3CE);
+top: 100px; 
+       left:900px; 
+}
+
+60% {
+    scale: 2;
+    background:radial-gradient(circle at top left, #FFDD94, #DOE6A5 );
+top: 30px; 
+       left:20px; 
+}
+
+75% {
+    scale: 6;
+    background:radial-gradient(circle at top left, #fa897b, #FFDD94);
+top: 30px; 
+       left:20px; 
+}
+
+95% {
+    scale: 1;
+    background:radial-gradient(circle at top left,#ccabd8, #fa897b);
+top: 30px; 
+       left:20px; 
+}
+
+100% {
+    background:radial-gradient(circle at top left,#43cea2 ,#185a9d);
+    scale: 3;
+top: 30px; 
+       left:20px; 
+}
+
+
+
+  
+
+}
+    
